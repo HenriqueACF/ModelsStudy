@@ -5,8 +5,48 @@ body{
 .bloco{
   min-height: 100%;
 }
+/*HOME*/
 .home{
+  animation: mudarbg 15s infinite;
   background-image: url('../img/bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+}
+.banner h2{
+  font-style: 2.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.banner p{
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+/*HOME ANIMATIONS*/
+@keyframes mudarbg{
+  40% {background-image:url('../img/bg2.jpg'); }
+  80% {background-image:url('../img/bg3.jpg'); }
+  100% {background-image:url('../img/bg.jpg'); }
+}
+/*SMARTPHONE*/
+@media only screen and (max-width:480px){
+
+}
+/*TABLET*/
+@media only screen and (min-width:601px){
+  .banner{
+    padding-top:4.5rem;
+  }
+  .banner h2{
+    font-size: 4rem;
+  }
+}
+/*DESKTOP*/
+@media only screen and (min-width:993px){
+  .banner{
+    padding-top: 5rem;
+  }
+  .banner h2{
+    font-size: 5rem;
+  }
 }
