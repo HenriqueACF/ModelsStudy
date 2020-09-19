@@ -1,0 +1,12 @@
+html,
+body{
+  height: 100%;
+}
+.bloco{
+  min-height: 100%;
+}
+.home{
+  background-image: url('../img/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
