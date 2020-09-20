@@ -35,21 +35,12 @@ body{
   width: 100px;
   margin-top: 15px;
 }
-nav{
-  color: #FFF;
-  background-color: #ee6e73;
-  width: 100%;
-  height: 94px;
-  line-height: 94px;
-}
 nav.nav-extended .nav-wrapper{
   min-height: 94px;
-  height: auto;
 }
 .navbar-fixed{
   position: absolute;
   height: 94px;
-  z-index: 997;
 }
 
 /*MENU*/
@@ -65,12 +56,12 @@ nav.nav-extended .nav-wrapper{
   background-color: rgba(0, 0, 0, 0.7);
   transition: background 0.5s linear;
 }
+nav,
 nav i,
 nav [class^="mdi-"],
 nav [class*="mdi-"],
-nav i.material-icons{
-  display: block;
-  font-size: 24px;
+nav i.material-icons,
+nav a.button-collapse i{
   height: 94px;
   line-height:94px;
 }
@@ -85,22 +76,24 @@ nav i.material-icons{
 .row{
   margin-bottom: 0;
 }
-
-/*SOBRE*/
-.about{
-  background-image: url('../img//textura1.png');
-}
-.about h2{
+/*TITULO E PARAGRAFO*/
+.titulo{
   font-size: 2rem;
-  color: #212121;
   text-transform: uppercase;
 }
-.about h2::after{
+.titulo::after{
   content: '';
   display: block;
   width: 100px;
   border-top: 1px solid #2dc7d0;
   margin: 15px auto;
+}
+.paragrafo{
+  line-height: 1.8rem;
+}
+/*SOBRE*/
+.about{
+  background-image: url('../img//textura1.png');
 }
 .about p{
   line-height: 1.8rem;
@@ -126,22 +119,6 @@ nav i.material-icons{
 .services{
   background-image: url('../img/textura2.png');
 }
-.services h2{
-  font-size: 2rem;
-  color :#fff;
-  text-transform: uppercase;
-}
-.services h2::after{
-  content: '';
-  display: block;
-  width: 100px;
-  border-top: 1px solid #2dc7d0;
-  margin: 15px auto;
-}
-.services p{
-  color: #FFF;
-  line-height: 1.8rem;
-}
 .services .btn-horario{
   padding-bottom: 20px;
 }
@@ -158,6 +135,16 @@ nav i.material-icons{
 .tabs .indicator{
   background-color: #2dc7d0;
 }
+/*UNIDADES*/
+.unidades{
+  background-image: url('../img/bg-unidades.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.unidades article p{
+  line-height: 1.8rem;
+}
 /*HOME ANIMATIONS*/
 @keyframes mudarbg{
   40% {background-image:url('../img/bg2.jpg'); }
@@ -166,7 +153,9 @@ nav i.material-icons{
 }
 /*SMARTPHONE*/
 @media only screen and (max-width:480px){
-
+  .card-image-horizontal{
+    display: none;
+  }
 }
 /*TABLET*/
 @media only screen and (min-width:601px){

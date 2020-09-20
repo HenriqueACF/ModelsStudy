@@ -18,11 +18,11 @@
    <header>
      <!--Menu Mobile-->
      <ul class="side-nav" id="menu-mobile">
-        <li> <a href="#home">Home</a> </li>
-        <li> <a href="#sobre">Sobre o Boa Forma</a> </li>
-        <li> <a href="#services">Serviços</a> </li>
-        <li> <a href="#unidades">Unidades</a> </li>
-        <li> <a href="#contato">Contato</a> </li>
+        <li> <a class="hide-menu" href="#home">Home</a> </li>
+        <li> <a class="hide-menu" href="#sobre">Sobre o Boa Forma</a> </li>
+        <li> <a class="hide-menu" href="#services">Serviços</a> </li>
+        <li> <a class="hide-menu" href="#unidades">Unidades</a> </li>
+        <li> <a class="hide-menu" href="#contato">Contato</a> </li>
     </ul>
     
      <div class="navbar-fixed">
@@ -54,8 +54,8 @@
           Quer experimentar?
         </p>
         <div class="row">
-          <a class="btn btn-large blue-logo">Sobre nós</a>
-          <a class="btn btn-large white black-text">Contato</a>
+          <a href="#sobre" class="btn btn-large blue-logo">Sobre nós</a>
+          <a href="#contato" class="btn btn-large white black-text">Contato</a>
         </div>
       </div>
       </div>
@@ -65,7 +65,7 @@
    <section class="about bloco scrollspy" id="sobre">
     <div class="row container">
       <div class="col s12 center">
-        <h2 class="light">Sobre nós</h2>
+        <h2 class="light titulo">Sobre nós</h2>
       </div>
 
       <div class="col s12 l6">
@@ -125,8 +125,8 @@
    <section class="services bloco scrollspy" id="services">
     <div class="row container">
       <div class="col s12 center">
-        <h2 class="light">Serviços</h2>
-        <p class="light">Suas instalações foram projetadas e equipadas sob medida, dentro dos padrões de acessibilidade, para 
+        <h2 class="light titulo white-text">Serviços</h2>
+        <p class="light paragrafo white-text">Suas instalações foram projetadas e equipadas sob medida, dentro dos padrões de acessibilidade, para 
           acolher a todos. A clinica dispõe de uma equipe profissional qualificada e com experiência no mercado
           , prezando sempre por tratamentos individualizados e baseados nos melhores resultados.
         </p>
@@ -405,6 +405,95 @@
     </dv>
     </div>
    </section>
+   <!--UNIDADES-->
+   <section class="unidades bloco scrollspy" id="unidades">
+      <div class="row container">
+        <div class="col s12 center">
+          <h2 class="light titulo white-text">Unidades</h2>
+          <p class="light white-text paragrafo">Para oferecer serviços de acordo com a realidade e necessidades de cada região do Brasil,
+            o Centro Boa  Forma possui unidades em quatro estados, com atividades permanentes.
+          </p>
+        </div>
+      </div>
+
+      <div class="row container">
+        <!--BH-->
+        <article class="col s12 l6">
+          <div class="card horizontal">
+            <div class="card-image card-image-horizontal">
+              <img src="./assets/img/bh.jpg">
+            </div>
+            <div class="card-stacked">
+              <div class="card-content">
+                <h3 class="light">Belo Horizonte</h3>
+                <p class="light">
+                  <i class="material-icons left">phone</i> 31 3232 5544 <br>
+                  <i class="material-icons left">email</i> bh@boaforma.com <br>
+                  <i class="material-icons left">location_on</i> Av. Belo Horizonte, 456
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!--Salvador-->
+        <article class="col s12 l6">
+          <div class="card horizontal ">
+            <div class="card-image card-image-horizontal">
+              <img src="./assets/img/salvador.jpg">
+            </div>
+            <div class="card-stacked">
+              <div class="card-content">
+                <h3 class="light">Salvador</h3>
+                <p class="light">
+                  <i class="material-icons left">phone</i> 31 3232 5544 <br>
+                  <i class="material-icons left">email</i> salvador@boaforma.com <br>
+                  <i class="material-icons left">location_on</i> Av. Salvador, 456
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!--RJ-->
+        <article class="col s12 l6">
+          <div class="card horizontal">
+            <div class="card-image card-image-horizontal">
+              <img src="./assets/img/rj.jpg">
+            </div>
+            <div class="card-stacked">
+              <div class="card-content">
+                <h3 class="light">Rio de Janeiro</h3>
+                <p class="light">
+                  <i class="material-icons left">phone</i> 31 3232 5544 <br>
+                  <i class="material-icons left">email</i> rj@boaforma.com <br>
+                  <i class="material-icons left">location_on</i> Av. Rio de Janeiro, 456
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!--SP-->
+        <article class=" col s12 l6">
+          <div class="card horizontal">
+            <div class="card-image card-image-horizontal">
+              <img src="./assets/img/sp.jpg">
+            </div>
+            <div class="card-stacked">
+              <div class="card-content">
+                <h3 class="light">São Paulo</h3>
+                <p class="light">
+                  <i class="material-icons left">phone</i> 31 3232 5544 <br>
+                  <i class="material-icons left">email</i> sp@boaforma.com <br>
+                  <i class="material-icons left">location_on</i> Av. Paulista, 456
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+   </section>
 
      <!-- JQUERY -->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -412,7 +501,7 @@
      <!-- MATERIALIZE JS -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
      <script>
-       $(document).ready(function(){
+       $(document).ready(()=>{
          //MENU MOBILE
         $(".button-collapse").sideNav();
         //EFEITO SCROLL
@@ -427,9 +516,19 @@
         $('.modal').modal();
         //TABS
         $('ul.tabs').tabs();
+        //HIDE MENU
+        $('.hide-menu').click(()=>{
+          $('.button-collapse').sideNav('hide')
+        })
+        //AUTOPLAY
+        function autoplay(){
+          $('.carousel').carousel('next');
+          setTimeout(autoplay, 4500)
+        }
+        autoplay();
        });
        //NAVCOLOR
-       $(window).on("scroll", function(){
+       $(window).on("scroll",()=>{
           if($(window).scrollTop() > 100){
             $('.navbar').addClass('nav-color');
           }else{
