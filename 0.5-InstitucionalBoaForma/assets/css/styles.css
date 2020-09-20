@@ -82,6 +82,10 @@ nav i.material-icons{
   font-weight: 100;
 }
 
+.row{
+  margin-bottom: 0;
+}
+
 /*SOBRE*/
 .about{
   background-image: url('../img//textura1.png');
@@ -117,6 +121,42 @@ nav i.material-icons{
 .about .missao-visao-valores p{
   color: #FFF;
   text-align: center;
+}
+/*SERVICES*/
+.services{
+  background-image: url('../img/textura2.png');
+}
+.services h2{
+  font-size: 2rem;
+  color :#fff;
+  text-transform: uppercase;
+}
+.services h2::after{
+  content: '';
+  display: block;
+  width: 100px;
+  border-top: 1px solid #2dc7d0;
+  margin: 15px auto;
+}
+.services p{
+  color: #FFF;
+  line-height: 1.8rem;
+}
+.services .btn-horario{
+  padding-bottom: 20px;
+}
+.tabs{
+  background-color: #222;
+}
+.tabs .tab a{
+  color: #FFF;
+}
+.tabs .tab a:hover,
+.tabs .tab a.active {
+  color: #2dc7d0;
+}
+.tabs .indicator{
+  background-color: #2dc7d0;
 }
 /*HOME ANIMATIONS*/
 @keyframes mudarbg{
