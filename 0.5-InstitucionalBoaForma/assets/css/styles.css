@@ -60,6 +60,10 @@ nav.nav-extended .nav-wrapper{
   background-color: transparent;
   color: #2dc7d0;
 }
+.nav-color{
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: background 0.5s linear;
+}
 nav i,
 nav [class^="mdi-"],
 nav [class*="mdi-"],
@@ -75,6 +79,27 @@ nav i.material-icons{
 .side-nav li>a{
   color: #FFF;
   font-weight: 100;
+}
+
+/*SOBRE*/
+.about{
+  background-image: url('../img//textura1.png');
+}
+.about h2{
+  font-size: 2rem;
+  color: #212121;
+  text-transform: uppercase;
+}
+.about h2::after{
+  content: '';
+  display: block;
+  width: 100px;
+  border-top: 1px solid #2dc7d0;
+  margin: 15px auto;
+}
+.about p{
+  line-height: 1.8rem;
+  text-align: justify;
 }
 /*HOME ANIMATIONS*/
 @keyframes mudarbg{

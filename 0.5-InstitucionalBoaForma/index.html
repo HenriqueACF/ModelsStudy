@@ -14,14 +14,15 @@
   <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
+  <!--HOME-->
    <header>
      <!--Menu Mobile-->
      <ul class="side-nav" id="menu-mobile">
-      <li> <a href="">Home</a> </li>
-      <li> <a href="">Sobre o Boa Forma</a> </li>
-      <li> <a href="">Serviços</a> </li>
-      <li> <a href="">Unidades</a> </li>
-      <li> <a href="">Contato</a> </li>
+        <li> <a href="#home">Home</a> </li>
+        <li> <a href="#sobre">Sobre o Boa Forma</a> </li>
+        <li> <a href="#servicos">Serviços</a> </li>
+        <li> <a href="#unidades">Unidades</a> </li>
+        <li> <a href="#contato">Contato</a> </li>
     </ul>
     
      <div class="navbar-fixed">
@@ -31,11 +32,11 @@
          <a href=""> <img class="logoImg" src="./assets/img/logo.png"> </a>
 
          <ul class="right light hide-on-med-and-down">
-           <li> <a href="">Home</a> </li>
-           <li> <a href="">Sobre o Boa Forma</a> </li>
-           <li> <a href="">Serviços</a> </li>
-           <li> <a href="">Unidades</a> </li>
-           <li> <a href="">Contato</a> </li>
+           <li> <a href="#home">Home</a> </li>
+           <li> <a href="#sobre">Sobre o Boa Forma</a> </li>
+           <li> <a href="#servicos">Serviços</a> </li>
+           <li> <a href="#unidades">Unidades</a> </li>
+           <li> <a href="#contato">Contato</a> </li>
          </ul>
 
          <a href="#" data-activates="menu-mobile" class="button-collapse  right"> <i class="material-icons">menu</i> </a>
@@ -43,7 +44,8 @@
      </nav>
     </div>
    </header> 
-   <section class="home bloco">
+   <!--HOME-->
+   <section class="home bloco scrollspy" id="home">
       <div class="row container banner">
       <div class="col s12 center">
         <h2 class="white-text">O melhor treinamento funcional da região</h2>
@@ -59,6 +61,31 @@
       </div>
    </section>
 
+   <!--ABOUT-->
+   <section class="about bloco scrollspy" id="sobre">
+    <div class="row container">
+      <div class="col s12 center">
+        <h2 class="light">Sobre nós</h2>
+      </div>
+
+      <div class="col s12 l6">
+        <p class="light">
+          O Centro Boa Forma chegou a Itabuana e região trazendo um novo conceito em prevenção,
+          promoção e reabilitação da saúde. Localizada no centro da cidade, conta com fácil estacionamento,
+          salas amplas e climatizadas, ambiente confortável e seguro aos seus usuários. Suas instalações forma
+          projetadas e equipadas sob medida, dentro dos padrões de acessibilidade para acolher todos.
+          O centro dispõe de uma equipe profissional qualificada e com experiência no mercado, prezando sempre por tratamentos
+          individualizados e baseados em evidências cientificas. Contando com facil acesso, estacionamento, salas amplas e climatizadas,
+          proporcionando um ambiente confortavel e seguro a todos seus usuários. 
+        </p>
+      </div>
+
+      <div class="col s12 l6">
+
+      </div>
+    </div>
+   </section>
+
      <!-- JQUERY -->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -66,8 +93,21 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
      <script>
        $(document).ready(function(){
+         //MENU MOBILE
         $(".button-collapse").sideNav();
-       })
+        //EFEITO SCROLL
+        $('.scrollspy').scrollSpy({
+          scrollOffset:0
+        });
+       });
+       //NAVCOLOR
+       $(window).on("scroll", function(){
+          if($(window).scrollTop() > 100){
+            $('.navbar').addClass('nav-color');
+          }else{
+            $('.navbar').removeClass('nav-color');
+          }
+       });
      </script>
 </body>
 </html>
