@@ -55,6 +55,7 @@ nav.nav-extended .nav-wrapper{
 /*MENU*/
 .navbar{
   background-color: transparent;
+  transition: background 0.5s linear;
 }
 .navbar ul a:hover{
   background-color: transparent;
@@ -101,6 +102,22 @@ nav i.material-icons{
   line-height: 1.8rem;
   text-align: justify;
 }
+.about .missao-visao-valores{
+  padding: 20px 0;
+  margin-top:35px;
+}
+.about .missao-visao-valores .icon{
+  color: #FFF;
+}
+.about .missao-visao-valores h3{
+  font-size: 1.5rem;
+  color: #FFF;
+  text-transform: uppercase;
+}
+.about .missao-visao-valores p{
+  color: #FFF;
+  text-align: center;
+}
 /*HOME ANIMATIONS*/
 @keyframes mudarbg{
   40% {background-image:url('../img/bg2.jpg'); }
@@ -119,6 +136,9 @@ nav i.material-icons{
   .banner h2{
     font-size: 4rem;
   }
+  .container{
+    width: 85%;
+  }
 }
 /*DESKTOP*/
 @media only screen and (min-width:993px){
@@ -127,5 +147,8 @@ nav i.material-icons{
   }
   .banner h2{
     font-size: 5rem;
+  }
+  .container{
+    width: 90%;
   }
 }
