@@ -30,6 +30,24 @@ body{
     overflow: hidden;
 }
 
+.container .card span{
+   position: absolute;
+   display: block;
+   width:0px;
+   height: 0px;
+   transform: translate(-50%, -50%);
+   border-radius: 50%;
+   opacity: 0.95;
+   background:#9c27b0;
+   z-index: 1;
+   transition:width 0.5s,height 0.5s;
+}
+
+.container .card:hover span{
+    width:1000px;
+    height: 1000px;
+}
+
 .container .card .imgBx{
     position:absolute;
     top: 0;
@@ -56,6 +74,7 @@ body{
    display: flex;
    justify-content:center;
    align-items: center;
+   z-index: 1;
 }
 .container .card .content div{
     padding:40px;
